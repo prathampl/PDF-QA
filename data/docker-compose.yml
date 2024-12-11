@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: pdf-qa-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    environment:
+      - REDIS_HOST=redis
+      - DATABASE_URL=sqlite:///./pdf_qa.db
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:latest
+    container_name: pdf-qa-redis
+    ports:
+      - "6379:6379"

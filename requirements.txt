@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pymupdf
+langchain
+sqlalchemy
+redis
+fastapi-limiter
+pytest
