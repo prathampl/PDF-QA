@@ -26,7 +26,7 @@ PDFReader is a FastAPI-based application that allows users to upload PDF files, 
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/pdfreader-qa.git
+   git clone https://github.com/prathampl/pdfreader-qa.git
    cd pdfreader-qa
    ```
 
